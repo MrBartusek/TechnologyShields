@@ -1,8 +1,8 @@
 {
   "name": "technology-shields",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "jest --config jestconfig.json",
     "build": "tsc",

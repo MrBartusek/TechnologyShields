@@ -1,5 +1,5 @@
 import * as simpleIcons from 'simple-icons';
-import * as urls from '../data/urls.json';
+import * as urls from './urls.json';
 
 export const enum ExportType {
 	URL = 'URL',
