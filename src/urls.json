@@ -1,5 +1,7 @@
 {
     "urls": {
-        ".NET": "https://dotnet.microsoft.com"
+        ".NET": "https://dotnet.microsoft.com",
+        "Visual Studio Code": "https://code.visualstudio.com",
+        "AIOHTTP": "https://docs.aiohttp.org/en/stable/"
     }
 }
