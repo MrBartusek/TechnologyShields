@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --config jestconfig.json",
-    "build": "tsc"
+    "build": "tsc",
+    "lint": "eslint src/**/**/**/** tests/**/**/**/**",
+    "prepare" : "npm run build"
   },
   "author": "MrBartusek",
   "license": "MIT",
