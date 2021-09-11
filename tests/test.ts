@@ -30,6 +30,11 @@ describe('TechnologyShields', () =>{
 		});
 	});
 
+	it('should generate multiple icons', () => {
+		expect(technologyShields.get(['typescript', 'typescript']))
+			.toBe('https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white');
+	});
+
 	it('should throw on invalid type', () => {
 		//eslint-disable-next-line
 		//@ts-ignore
@@ -42,5 +47,9 @@ describe('TechnologyShields', () =>{
 
 	it('should return undefined on invalid icons', () => {
 		expect(technologyShields.get('INVALID')).toBeUndefined();
+	});
+
+	it('should throw if invalid icon in list', () => {
+		expect(() => technologyShields.get(['INVALID', 'INVALID'])).toThrow();
 	});
 });
