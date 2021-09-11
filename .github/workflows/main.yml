@@ -1,4 +1,4 @@
-name: Build and Test
+name: build
 on: push
 jobs:
   test:
@@ -8,7 +8,7 @@ jobs:
     - name: Install dependencies
       run: npm ci
     - name: Run tests
-      run: npm test
+      run: npm run test
 
   lint:
     runs-on: ubuntu-latest
@@ -17,4 +17,4 @@ jobs:
     - name: Install dependencies
       run: npm ci
     - name: Run linting
-      run: npm lint
+      run: npm run lint
