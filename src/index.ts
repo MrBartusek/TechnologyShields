@@ -7,11 +7,12 @@ export const enum ExportType {
 	MARKDOWN = 'MARKDOWN'
 }
 
-export function get(name: string, type?: ExportType | 'URL' | 'HTML' | 'MARKDOWN', includeURL?: boolean): string {
+export function get(name: string, type?: ExportType | 'URL' | 'HTML' | 'MARKDOWN', includeURL?: boolean): string | undefined {
 	if(type == undefined) type = ExportType.URL;
 	if(includeURL == undefined) includeURL = true;
 
 	const icon = simpleIcons.get(name);
+	if(icon === undefined) return undefined;
 	const shieldURL = `https://img.shields.io/badge/-${icon.title}-${icon.hex}?style=flat-square&logo=${icon.slug}&logoColor=white`;
 	const url = serviceURL(icon);
 
@@ -32,8 +33,8 @@ export function get(name: string, type?: ExportType | 'URL' | 'HTML' | 'MARKDOWN
 }
 
 function serviceURL(icon: simpleIcons.SimpleIcon): string {
-	if(Object.prototype.hasOwnProperty.call(urls.urls, icon.slug)) {
-		return (urls.urls as any)[icon.slug];
+	if(Object.prototype.hasOwnProperty.call(urls.urls, icon.title)) {
+		return (urls.urls as any)[icon.title];
 	}
 	else {
 		return baseURL(icon.source);
