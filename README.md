@@ -2,7 +2,7 @@
  
 [![npm](https://img.shields.io/npm/v/technology-shields)](https://www.npmjs.com/package/technology-shields) [![build status](https://img.shields.io/github/workflow/status/MrBartusek/TechnologyShields/build)](https://github.com/MrBartusek/TechnologyShields/actions) [![codecov](https://codecov.io/gh/MrBartusek/TechnologyShields/branch/main/graph/badge.svg?token=7QK6LoXvv7)](https://codecov.io/gh/MrBartusek/TechnologyShields)
 
-TechnologyShields is a simple NPM package generating for [shields.io](https://shields.io) urls from [Simple Icons](https://simpleicons.org)
+TechnologyShields is a simple NPM package for generating [shields.io](https://shields.io) URLs from [Simple Icons](https://simpleicons.org) slugs.
 
 ## Installation
 
