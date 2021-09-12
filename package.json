@@ -7,7 +7,9 @@
     "test": "jest --config jestconfig.json",
     "build": "tsc",
     "lint": "eslint src/**/**/**/** tests/**/**/**/**",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "build-tools": "npm run build && cd tools && tsc",    
+    "generate-slugs": "node tools/dist/generate_slugs.js"
   },
   "author": "MrBartusek",
   "license": "MIT",
