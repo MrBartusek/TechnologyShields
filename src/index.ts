@@ -22,7 +22,7 @@ export function get(name: string | Array<string>, type?: ExportType | 'URL' | 'H
 				throw new Error(`Invalid icon name "${iconName}"`);
 			}
 		}
-		const shieldURL = `https://img.shields.io/badge/-${icon.title.replace(/ /g, '_')}-${icon.hex}?style=flat-square&logo=${icon.slug}&logoColor=white`;
+		const shieldURL = `https://img.shields.io/badge/-${icon.title.replace(/[ -]/g, '_')}-${icon.hex}?style=flat-square&logo=${icon.slug}&logoColor=white`;
 		const url = serviceURL(icon);
 
 		if(type == ExportType.URL) {
