@@ -7,8 +7,12 @@ export const enum ExportType {
 	MARKDOWN = 'MARKDOWN'
 }
 
+export function Get(name: string | Array<string>, type?: ExportType | 'URL' | 'HTML' | 'MARKDOWN', includeURL?: boolean): string | undefined {
+	return get(name, type, includeURL);
+}
+
 export function get(name: string | Array<string>, type?: ExportType | 'URL' | 'HTML' | 'MARKDOWN', includeURL?: boolean): string | undefined {
-	if(type == undefined) type = ExportType.URL;
+	if(type == undefined) type = ExportType.MARKDOWN;
 	if(includeURL == undefined) includeURL = true;
 	if(typeof name === 'string') name = [name];
 

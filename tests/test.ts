@@ -2,7 +2,7 @@ import * as technologyShields from '../src/index';
 
 describe('TechnologyShields', () =>{
 	it('should generate URL', () => {
-		expect(technologyShields.get('typescript'))
+		expect(technologyShields.get('typescript', 'URL'))
 			.toBe('https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=fff');
 	});
 
@@ -13,7 +13,7 @@ describe('TechnologyShields', () =>{
 		});
 
 		it('should generate MARKDOWN', () => {
-			expect(technologyShields.get('typescript', 'MARKDOWN'))
+			expect(technologyShields.get('typescript'))
 				.toBe('[![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=fff)](https://www.typescriptlang.org/)');
 		});
 	});
@@ -31,7 +31,7 @@ describe('TechnologyShields', () =>{
 	});
 
 	it('should generate multiple icons', () => {
-		expect(technologyShields.get(['typescript', 'typescript']))
+		expect(technologyShields.get(['typescript', 'typescript'], 'URL'))
 			.toBe('https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=fff https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=fff');
 	});
 
