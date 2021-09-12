@@ -14,6 +14,23 @@ npm install technology-shields
 
 > ℹ️ Because this package uses [simple-icons](https://github.com/simple-icons/simple-icons), we ask that all users read their [legal disclaimer](https://github.com/simple-icons/simple-icons/blob/develop/DISCLAIMER.md) before using icons from Simple Icons.
 
+TechnologyShields exports `get` function with alias `Get`. It takes 3 arguments:
+
+| Parameter  | Type                   | Required | Default          | Description |
+| ---------- | ---------------------- | -------- | ---------------- | ----------- |
+| name       | `string`               | Yes      |                  | Simple icons slug. [See all slugs](./slugs.md). |
+| type       | ExportType or `string` | No       | `ExportType.URL` | Type of the exported shield, see below |
+| includeURL | `boolean`              | No       | `true`           | Should image be wrapped in URL to the service. No effect if `URL` export type is selected |
+
+### Export Type
+
+If you are using Typescript, you can specify the export type using exported `ExportType` enum. If you don't
+want to or you are using Javascript, you can just provide a string. Available export options are:
+
+- `URL` - Export raw shield URL.
+- `MARKDOWN` - Export shield as markdown code.
+- `HTML` - Export shield as html code.
+
 ### Simple usage
 
 ```js
