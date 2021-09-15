@@ -45,7 +45,7 @@ describe('TechnologyShields', () =>{
 		expect(() => technologyShields.get('typescript', 'INVALID')).toThrow();
 	});
 
-	it('should use URL ovveride', () => {
+	it('should use URL override', () => {
 		expect(technologyShields.get('dotnet', 'MARKDOWN')).toContain('https://dotnet.microsoft.com');
 	});
 
@@ -55,5 +55,9 @@ describe('TechnologyShields', () =>{
 
 	it('should throw if invalid icon in list', () => {
 		expect(() => technologyShields.get(['INVALID', 'INVALID'])).toThrow();
+	});
+
+	it('should use alias', () => {
+		expect(technologyShields.Get('typescript')).toStrictEqual(technologyShields.get('typescript'));
 	});
 });
