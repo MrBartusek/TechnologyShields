@@ -59,9 +59,13 @@ function serviceURL(icon: simpleIcons.SimpleIcon): string {
 	}
 }
 
-function baseURL(url: string): string {
-	const path = url.split( '/' );
-	return path[0] + '//' + path[2] + '/';
+function baseURL(urlString: string): string {
+	const url = new URL(urlString);
+	const urlParts = url.hostname.split('.');
+	return url.protocol + '//' + urlParts
+		.slice(0)
+		.slice(-(urlParts.length === 4 ? 3 : 2))
+		.join('.');
 }
 
 function getIconColor(background: string): string {

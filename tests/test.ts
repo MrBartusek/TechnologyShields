@@ -9,12 +9,12 @@ describe('TechnologyShields', () =>{
 	describe('with url', () =>{
 		it('should generate HTML', () => {
 			expect(technologyShields.get('typescript', 'HTML'))
-				.toBe('<a href="https://www.typescriptlang.org/"><img alt="TypeScript" src="https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=fff"/></a>');
+				.toBe('<a href="https://typescriptlang.org"><img alt="TypeScript" src="https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=fff"/></a>');
 		});
 
 		it('should generate MARKDOWN', () => {
 			expect(technologyShields.get('typescript'))
-				.toBe('[![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=fff)](https://www.typescriptlang.org/)');
+				.toBe('[![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=fff)](https://typescriptlang.org)');
 		});
 	});
 
