@@ -2,6 +2,19 @@
     "urls": {
         ".NET": "https://dotnet.microsoft.com",
         "Visual Studio Code": "https://code.visualstudio.com",
-        "AIOHTTP": "https://docs.aiohttp.org/en/stable/"
+        "AIOHTTP": "https://docs.aiohttp.org/en/stable/",
+        "JavaScript": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+        "Vue.js": "https://vuejs.org",
+        "Dart": "https://dart.dev",
+        "Deno": "https://deno.land",
+        "HTML5": "https://developer.mozilla.org/en-US/docs/Glossary/HTML5",
+        "Prettier": "https://prettier.io",
+        "React": "https://reactjs.org",
+        "GitHub Actions": "https://github.com/features/actions",
+        "Apollo GraphQL": "https://www.apollographql.com",
+        "Redux": "https://redux.js.org",
+        "ReactiveX": "http://reactivex.io",
+        "Read the Docs": "https://readthedocs.org",
+        "D3.js": "https://d3js.org"
     }
 }
