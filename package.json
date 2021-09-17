@@ -1,6 +1,6 @@
 {
   "name": "technology-shields",
-  "version": "0.1.4",
+  "version": "1.0.0",
   "description": "Simple NPM package for generating shields.io URLs from Simple Icons",
   "main": "dist/index.js",
   "repository": {
