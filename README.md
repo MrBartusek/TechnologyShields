@@ -16,11 +16,11 @@ npm install technology-shields
 
 TechnologyShields exports `get` function with alias `Get`. It takes 3 arguments:
 
-| Parameter  | Type                   | Required | Default          | Description |
-| ---------- | ---------------------- | -------- | ---------------- | ----------- |
-| name       | `string`               | Yes      |                  | Simple icons slug. [See all slugs](./slugs.md). |
-| type       | ExportType or `string` | No       | `ExportType.URL` | Type of the exported shield, see below |
-| includeURL | `boolean`              | No       | `true`           | Should image be wrapped in URL to the service. No effect if `URL` export type is selected |
+| Parameter  | Type                   | Required | Default               | Description |
+| ---------- | ---------------------- | -------- | --------------------- | ----------- |
+| name       | `string`               | Yes      |                       | Simple icons slug. [See all slugs](./slugs.md). |
+| type       | ExportType or `string` | No       | `ExportType.MARKDOWN` | Type of the exported shield, see below |
+| includeURL | `boolean`              | No       | `true`                | Should image be wrapped in URL to the service. No effect if `URL` export type is selected |
 
 ### Export Type
 
