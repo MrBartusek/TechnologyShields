@@ -1,8 +1,12 @@
 {
   "name": "technology-shields",
   "version": "0.1.3",
-  "description": "",
+  "description": "Simple NPM package for generating shields.io URLs from Simple Icons",
   "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MrBartusek/TechnologyShields"
+  },
   "scripts": {
     "test": "jest --config jestconfig.json",
     "build": "tsc",
